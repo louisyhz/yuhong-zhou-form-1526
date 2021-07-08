@@ -40,7 +40,7 @@ function formValidator(ev) {
     }
     
 
-    if (errors.length == 0 ) {
+    if (errors.length === 0 ) {
         console.log('Collected Data');
         console.log(data);
         document.getElementById('contact').reset();
