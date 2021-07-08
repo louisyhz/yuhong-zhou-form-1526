@@ -1,0 +1,152 @@
+/*
+Colors
+#DDD
+#F5F5F5
+#6495ED
+*/
+
+.container{
+    background-color: #f5f5f5;
+    font-family: 'Arial', 'Helvetica', 'Helvetica Neue', 'sans-serif';
+    width: 50%;
+    border-radius: 2%;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-style:solid;
+    margin:0 auto;
+}
+
+.masthead{
+    border:solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    padding:1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    background-color: #fff;
+    font-weight:200;
+}
+
+.sub-buttn{
+    background-color: #6495ED;
+    width:60%;
+    color:#fff;
+    font-size: 0.7rem;
+    padding:0.4rem;
+    border-style: none;
+    width:93%;
+    
+}
+
+.fullname, .email, .message {
+    font-size:0.7rem;
+}
+
+input, textarea{
+    border:solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-radius: 2%;
+    width:90%;
+    height:100%;
+    margin-top:0.5rem;
+}
+
+input{
+    height:1.5rem;
+}
+
+
+
+/***************************************
+			Landscape phone and up
+***************************************************/
+@media only screen and (max-width: 25rem) {
+
+    .masthead{
+        font-size:1.1rem;
+    }
+
+    .fullname, .email, .message, .sub-buttn {
+        font-size:0.9rem;
+    }
+
+    .container{
+        width:60%
+    }
+}
+
+/***************************************************
+Custom Media Query - 25rem and 40rem
+***************************************************/
+@media only screen and (min-width: 25rem) and (max-width:40rem )  {
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.container{
+    width:75%;
+}
+
+.fullname, .email {
+    width: 50%;
+} 
+
+.message{
+    width:100%;
+    align-self: end;
+}
+
+
+.sub-buttn{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    width:40%;
+}
+
+textarea{
+    width:95%;
+}
+}
+
+/***************************************************
+Custom Media Query - 40rem and 50rem
+***************************************************/
+@media only screen and (min-width:40rem )and (max-width:50rem ) {
+
+
+form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+.container{
+        width:100%;
+        max-width:50rem;
+    }
+    
+.fullname, .email {
+        width: 50%;
+    } 
+    
+.message{
+        width:100%;
+        align-self: end;
+    }
+    
+.sub-buttn{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    width:40%;
+}
+
+textarea{
+    width:95%;
+}
+}
